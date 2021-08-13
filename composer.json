@@ -1,0 +1,27 @@
+{
+  "name": "kitsunecode/paginator",
+  "description": "Paginator is simple and is ready to generate results navigation in your application",
+  "keywords": [
+    "KitsuneCode",
+    "kitsune",
+    "Pagination",
+    "Paginator"
+  ],
+  "homepage": "https://www.kitsunews.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Enos S. S. Silva",
+      "email": "devenos@icloud.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "KitsuneCode\\Paginator\\": "src"
+    }
+  }
+}
