@@ -7,17 +7,17 @@
     "Pagination",
     "Paginator"
   ],
-  "homepage": "https://www.kitsunews.com",
+  "homepage": "https://www.kwsys.icu",
   "license": "MIT",
   "authors": [
     {
-      "name": "Enos S. S. Silva",
+      "name": "Enos S. S. Santos",
       "email": "devenos@icloud.com",
       "role": "Developer"
     }
   ],
   "require": {
-    "php": ">=7.4"
+    "php": ">=8.0"
   },
   "autoload": {
     "psr-4": {

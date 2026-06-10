@@ -5,7 +5,7 @@ namespace KitsuneCode\Paginator;
 /**
  * Class KitsuneCode Paginator
  *
- * @author Enos S. S. Silva <https://github.com/enosfox>
+ * @author Enos S. S. Santos <https://github.com/enosfox>
  * @package KitsuneCode\Paginator
  */
 class Paginator
@@ -56,7 +56,7 @@ class Paginator
      * @param array|null $first
      * @param array|null $last
      */
-    public function __construct(string $link = null, string $title = null, array $first = null, array $last = null)
+    public function __construct(?string $link = null, ?string $title = null, ?array $first = null, ?array $last = null)
     {
         $this->link = ($link ?? "?page=");
         $this->title = ($title ?? "Página");
@@ -72,7 +72,7 @@ class Paginator
      * @param string|null $hash
      * @param array $params
      */
-    public function pager(int $rows, int $limit = 10, int $page = null, int $range = 3, string $hash = null, array $params = []): void
+    public function pager(int $rows, int $limit = 10, ?int $page = null, int $range = 3, ?string $hash = null, array $params = []): void
     {
         $this->rows = $this->toPositive($rows);
         $this->limit = $this->toPositive($limit);
@@ -128,7 +128,7 @@ class Paginator
      * @param bool $fixedFirstAndLastPage
      * @return null|string
      */
-    public function render(string $cssClass = null, bool $fixedFirstAndLastPage = true): ?string
+    public function render(?string $cssClass = null, bool $fixedFirstAndLastPage = true): ?string
     {
         $this->class = $cssClass ?? "paginator";
 
